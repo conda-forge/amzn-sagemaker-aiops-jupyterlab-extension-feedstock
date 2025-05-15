@@ -1,5 +1,6 @@
 {% set name = "amzn-sagemaker-aiops-jupyterlab-extension" %}
-{% set version = "1.0.1" %}
+{% set version = "1.0.3" %}
+{% set python_min = "3.8" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/amzn_sagemaker_aiops_jupyterlab_extension-{{ version }}.tar.gz
-  sha256: 0250bb2081c0a29425c169af03cc2096776aff7a62fc14c795b61c806a9e9cc1
+  sha256: f515f979f9782d5ea5ec22128cce37045900d7b98beaf03e095d404c911120ab
 
 build:
   noarch: python
@@ -35,9 +36,10 @@ requirements:
     - pydantic >=1.10.17,<3
 
 test:
+  imports:
+    - amzn_sagemaker_aiops_jupyterlab_extension
   commands:
     - pip check
-    - jupyter labextension list 2>&1 | grep -q "@amzn/amzn_sagemaker_aiops_jupyterlab_extension"
   requires:
     - pip
     - python {{ python_min }}
@@ -51,3 +53,4 @@ about:
 extra:
   recipe-maintainers:
     - ratikkoka
+    - rkoka-amzn
