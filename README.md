@@ -144,7 +144,5 @@ Feedstock Maintainers
 =====================
 
 * [@ratikkoka](https://github.com/ratikkoka/)
-
-
-<!-- dummy commit to enable rerendering -->
+* [@rkoka-amzn](https://github.com/rkoka-amzn/)
 
