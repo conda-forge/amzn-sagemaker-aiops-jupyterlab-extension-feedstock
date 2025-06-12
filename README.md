@@ -144,4 +144,5 @@ Feedstock Maintainers
 =====================
 
 * [@ratikkoka](https://github.com/ratikkoka/)
+* [@rkoka-amzn](https://github.com/rkoka-amzn/)
 
