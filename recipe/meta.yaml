@@ -1,5 +1,5 @@
 {% set name = "amzn-sagemaker-aiops-jupyterlab-extension" %}
-{% set version = "1.0.5" %}
+{% set version = "1.0.6" %}
 {% set python_min = "3.8" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/amzn_sagemaker_aiops_jupyterlab_extension-{{ version }}.tar.gz
-  sha256: 4bff70decbb2c140dc81a8d0a8bfb7e4e8af9a7839e55e7a4a72a1be8c6adb69
+  sha256: 9cf4dcb926445f4bf9a74b8b374e70a23a4f3317c2eb26a6427c0d7b197061fa
 
 build:
   noarch: python
