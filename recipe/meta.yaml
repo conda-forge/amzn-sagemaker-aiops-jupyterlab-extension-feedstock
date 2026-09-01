@@ -7,7 +7,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/amzn_sagemaker_aiops_jupyterlab_extension-{{ version }}.tar.gz
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/amzn_sagemaker_aiops_jupyterlab_extension-{{ version }}.tar.gz
   sha256: a648c96975d6a5ceacf5d32733ddff8d45527c1c1a0e17cbfd2f46914fac77a7
 
 build:
