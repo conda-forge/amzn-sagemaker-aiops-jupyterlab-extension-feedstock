@@ -16,9 +16,7 @@ Current build status
 <table><tr>
     <td>All platforms:</td>
     <td>
-      <a href="https://github.com/conda-forge/amzn-sagemaker-aiops-jupyterlab-extension-feedstock/actions/workflows/conda-build.yml">
-        <img src="https://github.com/conda-forge/amzn-sagemaker-aiops-jupyterlab-extension-feedstock/actions/workflows/conda-build.yml/badge.svg?event=push&branch=main">
-      </a>
+      <img src="https://img.shields.io/badge/noarch-disabled-lightgrey.svg" alt="noarch disabled">
     </td>
   </tr>
 </table>
@@ -40,73 +38,31 @@ conda config --add channels conda-forge
 conda config --set channel_priority strict
 ```
 
-How to use
-----------
-
-<details>
-<summary>With conda</summary>
+Once the `conda-forge` channel has been enabled, `amzn-sagemaker-aiops-jupyterlab-extension` can be installed with `conda`:
 
 ```
 conda install amzn-sagemaker-aiops-jupyterlab-extension
 ```
 
-</details>
-
-<details>
-<summary>With mamba</summary>
+or with `mamba`:
 
 ```
 mamba install amzn-sagemaker-aiops-jupyterlab-extension
 ```
 
-</details>
-
-<details>
-<summary>With pixi</summary>
-
-```
-# for adding to your local project
-pixi add amzn-sagemaker-aiops-jupyterlab-extension
-# for installing globally
-pixi global install amzn-sagemaker-aiops-jupyterlab-extension
-```
-
-</details>
-
-Search package versions
------------------------
-
-It is possible to list all of the versions of `amzn-sagemaker-aiops-jupyterlab-extension` available on your platform:
-
-<details>
-<summary>With conda</summary>
+It is possible to list all of the versions of `amzn-sagemaker-aiops-jupyterlab-extension` available on your platform with `conda`:
 
 ```
 conda search amzn-sagemaker-aiops-jupyterlab-extension --channel conda-forge
 ```
 
-</details>
-
-<details>
-<summary>With mamba</summary>
+or with `mamba`:
 
 ```
 mamba search amzn-sagemaker-aiops-jupyterlab-extension --channel conda-forge
 ```
 
-</details>
-
-<details>
-<summary>With pixi</summary>
-
-```
-pixi search amzn-sagemaker-aiops-jupyterlab-extension --channel conda-forge
-```
-
-</details>
-
-<details>
-<summary>With mamba repoquery, which may provide more information</summary>
+Alternatively, `mamba repoquery` may provide more information:
 
 ```
 # Search all versions available on your platform:
@@ -118,8 +74,6 @@ mamba repoquery whoneeds amzn-sagemaker-aiops-jupyterlab-extension --channel con
 # List dependencies of `amzn-sagemaker-aiops-jupyterlab-extension`:
 mamba repoquery depends amzn-sagemaker-aiops-jupyterlab-extension --channel conda-forge
 ```
-
-</details>
 
 
 About conda-forge
